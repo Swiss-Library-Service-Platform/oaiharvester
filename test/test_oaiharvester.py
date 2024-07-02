@@ -10,10 +10,13 @@ import configparser
 from datetime import datetime, timedelta
 import dotenv
 
+os.chdir(os.path.dirname(__file__))
+
 dotenv.load_dotenv()
 
 config = configparser.ConfigParser()
 config.read('../config_test.cfg')
+config.read('config_test.cfg')
 
 base_url = config['OAI_harvesting']['BASE_URL']
 db_name = config['MongoDB']['DB_NAME']

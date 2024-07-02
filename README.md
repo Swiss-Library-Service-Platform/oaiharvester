@@ -1,7 +1,7 @@
 # OAI harvester
 * Author: Raphaël Rey (raphael.rey@slsp.ch)
 * Date: 2024-07-01
-* Version: 1.0.0
+* Version: 1.0.1
 
 ## Description
 This application is used to harvest Alma
@@ -39,19 +39,19 @@ It simplifies the correction.
 ## Installation
 An environment variable is required to store
 the `MONGO_URI` for the MongoDB connection. It
-is possible to use a `.dot` file.
+is possible to use a `.env` file.
 
 Required libraries are in `requirements.txt`.
 ```bash
 pip install -r requirements.txt
 ```
 
+## Configuration
 The configuration is to be defined in
 the `config.cfg` file for production
 and in `config_test.cfg` for
 the unittest.
 
-## Configuration
 * BASE_URL: OAI pmh endpoint to use
 * SET_NAME: set name of the set to harvest
 * DB_NAME: name of the MongoDB to use
@@ -108,6 +108,18 @@ record has been deleted. It's useful to know if the record has been deleted or n
 | duration                 | Duration of the update task in minutes                                                             |
 | nb_records_at_start_time | Number of records in nz_records collection when task started.                                      |
 | nb_records_at_end_time   | Number of records in nz_records collection when task ended.                                        |
+
+## Testing
+The unittests are in the `test` directory. They
+can be run with the following command:
+
+```bash
+python3 -m unittest 
+``` 
+
+Test data are available in the `test/harvested_data/test` folder.
+
+Single records are in the `test/records` folder.
 
 ## License
 GNU General Public License v3.0
