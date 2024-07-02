@@ -1,0 +1,320 @@
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2024-06-18T06:30:49Z</responseDate>
+  <request verb="ListRecords" resumptionToken="all@all@slsp_mongodb@marc21@67968865180005501">https://slsp-network.alma.exlibrisgroup.com/view/oai/41SLSP_NETWORK/request</request>
+  <ListRecords>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171056281605501</identifier>
+        <datestamp>2024-04-02T12:42:19Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_isbn</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>02339nam a2200457   4500</leader>
+          <controlfield tag="005">20230418084517.0</controlfield>
+          <controlfield tag="007">tu</controlfield>
+          <controlfield tag="008">220627s2023    xxu|||||      00| ||eng c</controlfield>
+          <controlfield tag="001">991171056281605501</controlfield>
+          <datafield tag="010" ind1=" " ind2=" ">
+            <subfield code="a">  2022022966</subfield>
+          </datafield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9780367893767</subfield>
+            <subfield code="q">hardback</subfield>
+          </datafield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9781032372938</subfield>
+            <subfield code="q">paperback</subfield>
+          </datafield>
+          <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(DE-627)1807949605</subfield>
+          </datafield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">DE-627</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="c">DE-627</subfield>
+            <subfield code="e">rda</subfield>
+            <subfield code="d">CH-ZuSLS UBS A100</subfield>
+          </datafield>
+          <datafield tag="044" ind1=" " ind2=" ">
+            <subfield code="c">XD-US</subfield>
+          </datafield>
+          <datafield tag="050" ind1=" " ind2="0">
+            <subfield code="a">P118.2</subfield>
+          </datafield>
+          <datafield tag="082" ind1="0" ind2=" ">
+            <subfield code="a">401/.93019</subfield>
+            <subfield code="q">LOC</subfield>
+          </datafield>
+          <datafield tag="082" ind1="7" ind2="4">
+            <subfield code="a">370</subfield>
+            <subfield code="2">23sdnb</subfield>
+          </datafield>
+          <datafield tag="082" ind1="7" ind2="4">
+            <subfield code="a">420</subfield>
+            <subfield code="2">23sdnb</subfield>
+          </datafield>
+          <datafield tag="082" ind1="7" ind2="4">
+            <subfield code="a">400</subfield>
+            <subfield code="2">23sdnb</subfield>
+          </datafield>
+          <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">&lt;&lt;The&gt;&gt; Routledge handbook of second language acquisition and psycholinguistics</subfield>
+            <subfield code="c">edited by Aline Godfroid and Holger Hopp</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">New York</subfield>
+            <subfield code="a">London</subfield>
+            <subfield code="b">Routledge</subfield>
+            <subfield code="c">2023</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">xvi, 462 Seiten</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="490" ind1="0" ind2=" ">
+            <subfield code="a">Routledge handbooks in second language acquisition</subfield>
+          </datafield>
+          <datafield tag="500" ind1=" " ind2=" ">
+            <subfield code="a">Includes bibliographical references and index</subfield>
+          </datafield>
+          <datafield tag="520" ind1=" " ind2=" ">
+            <subfield code="a">"The Routledge Handbook of Second Language Acquisition and Psycholinguistics provides a comprehensive survey of the latest research at the intersection of linguistics, cognitive psychology, and applied linguistics, for those seeking to understand the mental architecture and processes that shape the acquisition of additional languages. The handbook represents the full complexity of second language acquisition across the lifespan, spanning childhood bilinguals and adult L2 learners, and is inclusive of heritage languages, early bilingualism and multilingualism, and language attrition"--</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">Fremdsprachenlernen</subfield>
+            <subfield code="2">gnd</subfield>
+            <subfield code="0">(DE-588)4071461-5</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">Psycholinguistik</subfield>
+            <subfield code="2">gnd</subfield>
+            <subfield code="0">(DE-588)4127537-8</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="0">
+            <subfield code="a">Second language acquisition</subfield>
+            <subfield code="x">Psychological aspects</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="0">
+            <subfield code="a">Psycholinguistics</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="4">
+            <subfield code="a">Essays</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Godfroid, Aline</subfield>
+            <subfield code="4">edt</subfield>
+            <subfield code="0">(DE-588)1208311212</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Hopp, Holger</subfield>
+            <subfield code="d">1975-</subfield>
+            <subfield code="4">edt</subfield>
+            <subfield code="0">(DE-588)1045158836</subfield>
+          </datafield>
+          <datafield tag="776" ind1="0" ind2="8">
+            <subfield code="i">Erscheint auch als</subfield>
+            <subfield code="n">Online-Ausgabe</subfield>
+            <subfield code="t">Routledge handbook of second language acquisition and psycholinguistics</subfield>
+            <subfield code="z">9781003018872</subfield>
+          </datafield>
+          <datafield tag="856" ind1="4" ind2="2">
+            <subfield code="3">Inhaltsverzeichnis</subfield>
+            <subfield code="q">PDF</subfield>
+            <subfield code="u">https://urn.ub.unibe.ch/urn:ch:slsp:9781032372938:ihv:pdf</subfield>
+          </datafield>
+          <datafield tag="900" ind1=" " ind2=" ">
+            <subfield code="a">Stoppsignal FRED</subfield>
+            <subfield code="x">UBE/B500/202302</subfield>
+          </datafield>
+          <datafield tag="900" ind1=" " ind2=" ">
+            <subfield code="a">Stoppsignal FRED</subfield>
+            <subfield code="x">UBS/A100/202303</subfield>
+          </datafield>
+          <datafield tag="949" ind1=" " ind2=" ">
+            <subfield code="a">https://urn.ub.unibe.ch/urn:ch:slsp:9781032372938:ihv:pdf</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">System</subfield>
+            <subfield code="f">K10plus (ohne Login)</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="h">20221018142129.0</subfield>
+            <subfield code="l">94</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2024-03-23 22:47:03 Europe/Zurich</subfield>
+            <subfield code="g">1807949605</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">sheila.ryser@unibas.ch######41SLSP_UBS</subfield>
+            <subfield code="b">2022-10-27 15:02:45 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171021105505501</identifier>
+        <datestamp>2024-04-02T12:42:19Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>00759naa a2200193 c 4500</leader>
+          <controlfield tag="005">20230810153934.0</controlfield>
+          <controlfield tag="008">210309s1959    sz    | o     0|0 0 ger d</controlfield>
+          <controlfield tag="001">991171021105505501</controlfield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">CH-ZuSLS UZB ZB</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="e">rda</subfield>
+          </datafield>
+          <datafield tag="041" ind1="0" ind2=" ">
+            <subfield code="a">ger</subfield>
+          </datafield>
+          <datafield tag="082" ind1="7" ind2="4">
+            <subfield code="a">050</subfield>
+            <subfield code="2">23sdnb</subfield>
+          </datafield>
+          <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Betulius, Walter</subfield>
+            <subfield code="d">1922-</subfield>
+            <subfield code="4">aut</subfield>
+            <subfield code="0">(DE-588)1148176187</subfield>
+          </datafield>
+          <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">&lt;&lt;Die&gt;&gt; Z&#252;rcher Neujahrsbl&#228;tter f&#252;r 1959</subfield>
+            <subfield code="c">Walter Betulius</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">c</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">cr</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="506" ind1="0" ind2=" ">
+            <subfield code="a">Open Access</subfield>
+            <subfield code="f">Unrestricted online access</subfield>
+            <subfield code="2">star</subfield>
+          </datafield>
+          <datafield tag="651" ind1=" " ind2="7">
+            <subfield code="a">Z&#252;rich</subfield>
+            <subfield code="2">gnd</subfield>
+            <subfield code="0">(DE-588)4068038-1</subfield>
+          </datafield>
+          <datafield tag="773" ind1="0" ind2=" ">
+            <subfield code="t">Neue Z&#252;rcher Zeitung</subfield>
+            <subfield code="g">Abendausgabe Nr. 3925, 30. Dezember 1958, Blatt 8 und Morgenausgabe Nr. 3930, 31. Dezember 1958, Blatt 3</subfield>
+            <subfield code="w">99116743714305508</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">christoph.schwarz@zb.uzh.ch######41SLSP_UZB</subfield>
+            <subfield code="f">41SLSP_NETWORK</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="l">60</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2023-08-10 15:39:34 Europe/Zurich</subfield>
+            <subfield code="g">991171021106305501</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">nina.hoefliger@zb.uzh.ch######41SLSP_UZB</subfield>
+            <subfield code="b">2022-07-05 14:37:29 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171258611905501</identifier>
+        <datestamp>2024-04-02T12:42:19Z</datestamp>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>00685nam a22001814c 4500</leader>
+          <controlfield tag="005">20231127085231.0</controlfield>
+          <controlfield tag="008">080318s1870    gw            00    fre  </controlfield>
+          <controlfield tag="001">991171258611905501</controlfield>
+          <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(ABN)000345359ABN01</subfield>
+          </datafield>
+          <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(OCoLC)1244913398</subfield>
+          </datafield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">CH-ZuSLS ABN AKB</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="e">kids</subfield>
+          </datafield>
+          <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Bluntschli, Johann Caspar</subfield>
+            <subfield code="d">1808-1881</subfield>
+            <subfield code="0">(DE-588)118512129</subfield>
+          </datafield>
+          <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Opinion impartiale sur la question de l'Alabama et sur la maniere de la resoudre</subfield>
+            <subfield code="c">J. C. Bluntschli, suivie d'une lettre de Francis Lieber sur l'arbitrage international</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">Berlin</subfield>
+            <subfield code="b">Puttkammer u. M&#252;hlbrecht</subfield>
+            <subfield code="c">1870</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">1 Band</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c"System</subfield>
+            <subfield code="f">ILS</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="l">48</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2023-11-27 08:52:31 Europe/Zurich</subfield>
+            <subfield code="g">990003453590108281</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">System</subfield>
+            <subfield code="b">2023-08-24 18:16:50 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <resumptionToken>all@all@slsp_mongodb@marc21@67968877080005501</resumptionToken>
+  </ListRecords>
+</OAI-PMH>

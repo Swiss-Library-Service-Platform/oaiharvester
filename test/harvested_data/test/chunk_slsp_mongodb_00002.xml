@@ -1,0 +1,605 @@
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+  <responseDate>2024-06-21T10:13:15Z</responseDate>
+  <request verb="ListRecords" metadataPrefix="marc21" set="slsp_mongodb">https://slsp-network.alma.exlibrisgroup.com/view/oai/41SLSP_NETWORK/request</request>
+  <ListRecords>
+      <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171847533305501</identifier>
+        <datestamp>2024-04-02T12:42:19Z</datestamp>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>01757nam a2200313 c 4500</leader>
+          <controlfield tag="005">20240305130909.0</controlfield>
+          <controlfield tag="008">240222s2023    un ||||      |00| ||ukr d</controlfield>
+          <controlfield tag="001">991171847533305501</controlfield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9789663088846</subfield>
+          </datafield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">CH-ZuSLS UBE</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="e">rda</subfield>
+          </datafield>
+          <datafield tag="082" ind1="7" ind2="4">
+            <subfield code="a">891.8</subfield>
+            <subfield code="2">23sdnb</subfield>
+          </datafield>
+          <datafield tag="084" ind1=" " ind2=" ">
+            <subfield code="a">B</subfield>
+            <subfield code="2">23sdnb</subfield>
+          </datafield>
+          <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="6">880-01</subfield>
+            <subfield code="a">Paljanycja</subfield>
+            <subfield code="b">ukra&#239;n'ska dlja po&#269;atkivciv</subfield>
+            <subfield code="c">Olesa Kalyny&#269;, Ljudmyla Kotkova, Taras Kremin'</subfield>
+          </datafield>
+          <datafield tag="880" ind1="0" ind2="0">
+            <subfield code="6">245-01/(N</subfield>
+            <subfield code="a">&#1055;&#1072;&#1083;&#1103;&#1085;&#1080;&#1094;&#1103;</subfield>
+            <subfield code="b">&#1091;&#1082;&#1088;&#1072;&#1111;&#1085;&#1089;&#1100;&#1082;&#1072; &#1076;&#1083;&#1103; &#1087;&#1086;&#1095;&#1072;&#1090;&#1082;&#1110;&#1074;&#1094;&#1110;&#1074;</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">Ternopil'</subfield>
+            <subfield code="b">Aston</subfield>
+            <subfield code="c">2023</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">159 Seiten</subfield>
+            <subfield code="b">Illustrationen</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">Ukrainisch</subfield>
+            <subfield code="2">gnd</subfield>
+            <subfield code="0">(DE-588)4120373-2</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="7">
+            <subfield code="a">Fremdsprache Anf&#228;nger</subfield>
+            <subfield code="2">gnd</subfield>
+          </datafield>
+          <datafield tag="655" ind1=" " ind2="7">
+            <subfield code="a">Lehrmittel</subfield>
+            <subfield code="2">gnd-content</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="6">880-02</subfield>
+            <subfield code="a">Kalyny&#269;, Olesja Vasylivna</subfield>
+            <subfield code="4">edt</subfield>
+          </datafield>
+          <datafield tag="880" ind1="1" ind2=" ">
+            <subfield code="6">700-02/(N</subfield>
+            <subfield code="a">&#1050;&#1072;&#1083;&#1080;&#1085;&#1080;&#1095;, &#1054;&#1083;&#1077;&#1089;&#1103; &#1042;&#1072;&#1089;&#1080;&#1083;&#1110;&#1074;&#1085;&#1072;</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="6">880-03</subfield>
+            <subfield code="a">Kotkova, Ljudmila Yvanivna</subfield>
+            <subfield code="4">edt</subfield>
+          </datafield>
+          <datafield tag="880" ind1="1" ind2=" ">
+            <subfield code="6">700-03/(N</subfield>
+            <subfield code="a">&#1050;&#1086;&#1090;&#1082;&#1086;&#1074;&#1072;, &#1051;&#1102;&#1076;&#1084;&#1080;&#1083;&#1072; &#1030;&#1074;&#1072;&#1085;&#1110;&#1074;&#1085;&#1072;</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="6">880-04</subfield>
+            <subfield code="a">Kremin&#697;, Taras Dmytrovy&#269;</subfield>
+            <subfield code="d">1978-</subfield>
+            <subfield code="0">(DE-588)1027019781</subfield>
+          </datafield>
+          <datafield tag="880" ind1="1" ind2=" ">
+            <subfield code="6">700-04/(N</subfield>
+            <subfield code="a">&#1050;&#1088;&#1077;&#1084;&#1110;&#1085;&#1100;, &#1058;&#1072;&#1088;&#1072;&#1089;</subfield>
+          </datafield>
+          <datafield tag="900" ind1=" " ind2=" ">
+            <subfield code="a">Stoppsignal FRED</subfield>
+            <subfield code="x">UBE/B410/202402</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">System</subfield>
+            <subfield code="f">41SLSP_NETWORK</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="l">76</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2024-03-18 14:56:42 Europe/Zurich</subfield>
+            <subfield code="g">991171847533305501</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">prisca.zurron@unibe.ch######41SLSP_UBE</subfield>
+            <subfield code="b">2024-02-22 13:48:37 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171133322905501</identifier>
+        <datestamp>2024-04-02T12:42:19Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_isbn</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>00761nam a22002417c 4500</leader>
+          <controlfield tag="005">20231113150729.0</controlfield>
+          <controlfield tag="008">020408s2002    it            000 0 ita d</controlfield>
+          <controlfield tag="001">991171133322905501</controlfield>
+          <datafield tag="015" ind1=" " ind2=" ">
+            <subfield code="a">2002-13907</subfield>
+            <subfield code="2">bni</subfield>
+          </datafield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">8834336755</subfield>
+          </datafield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9788834336755</subfield>
+          </datafield>
+          <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(OCoLC)889082598</subfield>
+          </datafield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">ITCPE</subfield>
+            <subfield code="b">ita</subfield>
+            <subfield code="c">ITCPE</subfield>
+            <subfield code="d">OCLCQ</subfield>
+          </datafield>
+          <datafield tag="082" ind1="1" ind2="4">
+            <subfield code="a">248.22</subfield>
+            <subfield code="2">22</subfield>
+          </datafield>
+          <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Ruh, Kurt.</subfield>
+            <subfield code="4">aut</subfield>
+          </datafield>
+          <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Storia della mistica occidentale</subfield>
+            <subfield code="n">2,</subfield>
+            <subfield code="p">Mistica femminile e mistica francescana delle origini /</subfield>
+            <subfield code="c">Kurt Ruh</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2=" ">
+            <subfield code="a">Milano</subfield>
+            <subfield code="b">Vita e pensiero</subfield>
+            <subfield code="c">[2002]</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">556 p.</subfield>
+            <subfield code="c">23 cm</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="4">
+            <subfield code="a">MISTICA CRISTIANA</subfield>
+            <subfield code="x">Storia</subfield>
+          </datafield>
+          <datafield tag="773" ind1="0" ind2=" ">
+            <subfield code="a">Ruh.</subfield>
+            <subfield code="t">Storia della mistica occidentale / Kurt Ruh</subfield>
+            <subfield code="g">2</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">sabina.walder@usi.ch######41SLSP_USI</subfield>
+            <subfield code="f">WorldCat (OCLC - SLSP)</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="h">20230119060711.0</subfield>
+            <subfield code="l">66</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2023-11-13 15:07:29 Europe/Zurich</subfield>
+            <subfield code="g">ocn889082598</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">maria.assunta.cerullo@usi.ch######41SLSP_USI</subfield>
+            <subfield code="b">2023-01-19 12:07:28 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171170119905501</identifier>
+        <datestamp>2024-06-16T07:01:54Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>00746nam a2200181 c 4500</leader>
+          <controlfield tag="008">230421s1932    sz ||||      |00| ||ger d</controlfield>
+          <controlfield tag="005">20230421135832.0</controlfield>
+          <controlfield tag="001">991171170119905501</controlfield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">CH-ZuSLS ZBS</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="e">rda</subfield>
+          </datafield>
+          <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Regulativ f&#252;r h&#228;usliche M&#252;tter- und S&#228;uglingspflege-Kurse</subfield>
+            <subfield code="c">gemeinsam herausgegeben vom Schweizerischen Roten Kreuz und vom Schweizerischen Samariterbund</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">[Schweiz]</subfield>
+            <subfield code="b">[Verlag nicht ermittelbar]</subfield>
+            <subfield code="c">[1932]</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2="3">
+            <subfield code="a">Solothurn</subfield>
+            <subfield code="b">Buchdruckerei Vogt-Schild</subfield>
+            <subfield code="c">1932</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">13 Seiten</subfield>
+            <subfield code="c">19 cm</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="710" ind1="2" ind2=" ">
+            <subfield code="a">Schweizerisches Rotes Kreuz</subfield>
+            <subfield code="0">(DE-588)2021731-6</subfield>
+            <subfield code="4">isb</subfield>
+          </datafield>
+          <datafield tag="710" ind1="2" ind2=" ">
+            <subfield code="a">Schweizerischer Samariterbund</subfield>
+            <subfield code="0">(DE-588)2110939-4</subfield>
+            <subfield code="4">isb</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">System</subfield>
+            <subfield code="f">41SLSP_NETWORK</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="l">50</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2024-05-31 04:16:12 Europe/Zurich</subfield>
+            <subfield code="g">991171170119905501</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">patrick.borer@zbsolothurn.ch######41SLSP_ZBS</subfield>
+            <subfield code="b">2023-04-21 13:58:32 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171133322905501</identifier>
+        <datestamp>2024-05-02T12:42:19Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_isbn</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>00761nam a22002417c 4500</leader>
+          <controlfield tag="005">20231113150729.0</controlfield>
+          <controlfield tag="008">020408s2002    it            000 0 ita d</controlfield>
+          <controlfield tag="001">991171133322905501</controlfield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">8834336755</subfield>
+          </datafield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9788834336755</subfield>
+          </datafield>
+          <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(OCoLC)889082598</subfield>
+          </datafield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">ITCPE</subfield>
+            <subfield code="b">ita</subfield>
+            <subfield code="c">ITCPE</subfield>
+            <subfield code="d">OCLCQ</subfield>
+          </datafield>
+          <datafield tag="082" ind1="1" ind2="4">
+            <subfield code="a">248.22</subfield>
+            <subfield code="2">22</subfield>
+          </datafield>
+          <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Ruh, Kurt.</subfield>
+            <subfield code="4">aut</subfield>
+          </datafield>
+          <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Storia della mistica occidentale</subfield>
+            <subfield code="n">2,</subfield>
+            <subfield code="p">Mistica femminile e mistica francescana delle origini /</subfield>
+            <subfield code="c">Kurt Ruh</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2=" ">
+            <subfield code="a">Milano</subfield>
+            <subfield code="b">Vita e pensiero</subfield>
+            <subfield code="c">[2002]</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">556 p.</subfield>
+            <subfield code="c">23 cm</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="4">
+            <subfield code="a">MISTICA CRISTIANA</subfield>
+            <subfield code="x">Storia</subfield>
+          </datafield>
+          <datafield tag="773" ind1="0" ind2=" ">
+            <subfield code="a">Ruh.</subfield>
+            <subfield code="t">Storia della mistica occidentale / Kurt Ruh</subfield>
+            <subfield code="g">2</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">sabina.walder@usi.ch######41SLSP_USI</subfield>
+            <subfield code="f">WorldCat (OCLC - SLSP)</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="h">20230119060711.0</subfield>
+            <subfield code="l">66</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2023-11-13 15:07:29 Europe/Zurich</subfield>
+            <subfield code="g">ocn889082598</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">maria.assunta.cerullo@usi.ch######41SLSP_USI</subfield>
+            <subfield code="b">2023-01-19 12:07:28 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171166416505501</identifier>
+        <datestamp>2024-04-02T12:42:19Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>01165njm a2200301 c 4500</leader>
+          <controlfield tag="005">20230411230116.0</controlfield>
+          <controlfield tag="008">230411t20232023po ||nn  |||||| | | zxx d</controlfield>
+          <controlfield tag="001">991171166416505501</controlfield>
+          <datafield tag="024" ind1="3" ind2=" ">
+            <subfield code="a">5609063407693</subfield>
+          </datafield>
+          <datafield tag="028" ind1="0" ind2="2">
+            <subfield code="a">CS 769 CD</subfield>
+            <subfield code="b">Creative Sources Recordings</subfield>
+          </datafield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">CH-ZuSLS RZS</subfield>
+            <subfield code="e">rda</subfield>
+          </datafield>
+          <datafield tag="082" ind1="7" ind2="4">
+            <subfield code="a">780</subfield>
+            <subfield code="2">23sdnb</subfield>
+          </datafield>
+          <datafield tag="245" ind1="0" ind2="0">
+            <subfield code="a">Two movements</subfield>
+            <subfield code="c">Werckmeister</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2="1">
+            <subfield code="a">Lisboa</subfield>
+            <subfield code="b">Creative Sources Recordings</subfield>
+            <subfield code="c">[2023]</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2="4">
+            <subfield code="c">&#169; 2023</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">1 CD</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">prm</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">s</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">sd</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="511" ind1="1" ind2=" ">
+            <subfield code="a">Markus Eichenberger (Clarinet) ; Carl Ludwig H&#252;bsch (Tuba) ; Etienne Nillesen (Extended Snare Drum) ; Philip Zoubek (Moog Synthesizer)</subfield>
+          </datafield>
+          <datafield tag="518" ind1=" " ind2=" ">
+            <subfield code="a">Recording on 2nd February 2022 at MUG Einstein Kultur in Munich, Germany</subfield>
+          </datafield>
+          <datafield tag="655" ind1=" " ind2="7">
+            <subfield code="a">CD</subfield>
+            <subfield code="2">gnd-carrier</subfield>
+          </datafield>
+          <datafield tag="690" ind1=" " ind2=" ">
+            <subfield code="a">Jazz</subfield>
+            <subfield code="2">rzs-LB</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Eichenberger, Markus</subfield>
+            <subfield code="d">1957-</subfield>
+            <subfield code="0">(DE-588)1104133059</subfield>
+            <subfield code="4">itr</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">H&#252;bsch, Carl Ludwig</subfield>
+            <subfield code="d">1966-</subfield>
+            <subfield code="0">(DE-588)135241006</subfield>
+            <subfield code="4">itr</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Nillesen, Etienne</subfield>
+            <subfield code="0">(DE-588)136154352</subfield>
+            <subfield code="4">itr</subfield>
+          </datafield>
+          <datafield tag="700" ind1="1" ind2=" ">
+            <subfield code="a">Zoubek, Philip</subfield>
+            <subfield code="d">1978-</subfield>
+            <subfield code="0">(DE-588)142741965</subfield>
+            <subfield code="4">itr</subfield>
+          </datafield>
+          <datafield tag="710" ind1="2" ind2=" ">
+            <subfield code="a">Werckmeister</subfield>
+            <subfield code="g">Musikgruppe</subfield>
+            <subfield code="0">(DE-588)1285919025</subfield>
+            <subfield code="4">itr</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">System</subfield>
+            <subfield code="f">41SLSP_NETWORK</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="l">77</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2023-04-18 04:44:43 Europe/Zurich</subfield>
+            <subfield code="g">991171166416505501</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">andreas.niederberger@hslu.ch######41SLSP_RZS</subfield>
+            <subfield code="b">2023-04-11 17:13:47 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+    <record>
+      <header status="deleted">
+        <identifier>oai:alma.41SLSP_NETWORK:991171847533305501</identifier>
+        <datestamp>2024-12-14T12:42:19Z</datestamp>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+    </record>
+    <record>
+      <header>
+        <identifier>oai:alma.41SLSP_NETWORK:991171133322905501</identifier>
+        <datestamp>2024-06-20T12:42:19Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_isbn</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+      </header>
+      <metadata>
+        <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+          <leader>00761nam a22002417c 4500</leader>
+          <controlfield tag="005">20231113150729.0</controlfield>
+          <controlfield tag="008">020408s2002    it            000 0 ita d</controlfield>
+          <controlfield tag="001">991171133322905501</controlfield>
+          <datafield tag="020" ind1=" " ind2=" ">
+            <subfield code="a">9788834336755</subfield>
+          </datafield>
+          <datafield tag="035" ind1=" " ind2=" ">
+            <subfield code="a">(OCoLC)889082598</subfield>
+          </datafield>
+          <datafield tag="040" ind1=" " ind2=" ">
+            <subfield code="a">ITCPE</subfield>
+            <subfield code="b">ita</subfield>
+            <subfield code="c">ITCPE</subfield>
+            <subfield code="d">OCLCQ</subfield>
+          </datafield>
+          <datafield tag="082" ind1="1" ind2="4">
+            <subfield code="a">248.22</subfield>
+            <subfield code="2">22</subfield>
+          </datafield>
+          <datafield tag="100" ind1="1" ind2=" ">
+            <subfield code="a">Ruh, Kurt.</subfield>
+            <subfield code="4">aut</subfield>
+          </datafield>
+          <datafield tag="245" ind1="1" ind2="0">
+            <subfield code="a">Storia della mistica occidentale</subfield>
+            <subfield code="n">2,</subfield>
+            <subfield code="p">Mistica femminile e mistica francescana delle origini /</subfield>
+            <subfield code="c">Kurt Ruh</subfield>
+          </datafield>
+          <datafield tag="264" ind1=" " ind2=" ">
+            <subfield code="a">Milano</subfield>
+            <subfield code="b">Vita e pensiero</subfield>
+            <subfield code="c">[2002]</subfield>
+          </datafield>
+          <datafield tag="300" ind1=" " ind2=" ">
+            <subfield code="a">556 p.</subfield>
+            <subfield code="c">23 cm</subfield>
+          </datafield>
+          <datafield tag="336" ind1=" " ind2=" ">
+            <subfield code="b">txt</subfield>
+            <subfield code="2">rdacontent</subfield>
+          </datafield>
+          <datafield tag="337" ind1=" " ind2=" ">
+            <subfield code="b">n</subfield>
+            <subfield code="2">rdamedia</subfield>
+          </datafield>
+          <datafield tag="338" ind1=" " ind2=" ">
+            <subfield code="b">nc</subfield>
+            <subfield code="2">rdacarrier</subfield>
+          </datafield>
+          <datafield tag="650" ind1=" " ind2="4">
+            <subfield code="a">MISTICA CRISTIANA</subfield>
+            <subfield code="x">Storia</subfield>
+          </datafield>
+          <datafield tag="773" ind1="0" ind2=" ">
+            <subfield code="a">Ruh.</subfield>
+            <subfield code="t">Storia della mistica occidentale / Kurt Ruh</subfield>
+            <subfield code="g">2</subfield>
+          </datafield>
+          <datafield tag="988" ind1=" " ind2=" ">
+            <subfield code="c">sabina.walder@usi.ch######41SLSP_USI</subfield>
+            <subfield code="f">WorldCat (OCLC - SLSP)</subfield>
+            <subfield code="i">marc21</subfield>
+            <subfield code="h">20230119060711.0</subfield>
+            <subfield code="l">66</subfield>
+            <subfield code="k">01</subfield>
+            <subfield code="e">false</subfield>
+            <subfield code="d">2024-06-18 15:07:29 Europe/Zurich</subfield>
+            <subfield code="g">ocn889082598</subfield>
+            <subfield code="j">20</subfield>
+            <subfield code="a">maria.assunta.cerullo@usi.ch######41SLSP_USI</subfield>
+            <subfield code="b">2023-01-19 12:07:28 Europe/Zurich</subfield>
+          </datafield>
+        </record>
+      </metadata>
+    </record>
+  </ListRecords>
+</OAI-PMH>

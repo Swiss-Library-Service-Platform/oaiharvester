@@ -1,0 +1,11 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <header status="deleted">
+        <identifier>oai:alma.41SLSP_NETWORK:991000347589705501</identifier>
+        <datestamp>2024-06-16T07:01:45Z</datestamp>
+        <setSpec>slsp_nz</setSpec>
+        <setSpec>oai_isbn</setSpec>
+        <setSpec>oai_rnv</setSpec>
+        <setSpec>slsp_nz_exl</setSpec>
+        <setSpec>slsp_mongodb</setSpec>
+    </header>
+</record>

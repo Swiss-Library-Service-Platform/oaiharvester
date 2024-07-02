@@ -1,0 +1,10 @@
+env
+.idea
+__pycache__
+*.pyc
+.env
+test/.env
+log
+test/log
+test/harvested_data/OaiSet_*
+harvested_data/OaiSet_*

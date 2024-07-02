@@ -1,0 +1,84 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header>
+    <identifier>oai:alma.41SLSP_NETWORK:991171842027005501</identifier>
+    <datestamp>2024-05-02T12:42:18Z</datestamp>
+    <setSpec>oai_rnv</setSpec>
+    <setSpec>slsp_mongodb</setSpec>
+  </header>
+  <metadata>
+    <record xmlns="http://www.loc.gov/MARC21/slim" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+      <leader>00981nkm a22002532c 4500</leader>
+      <controlfield tag="005">20240308160736.0</controlfield>
+      <controlfield tag="008">240129s1930    xx ||||      | 0| k|    d</controlfield>
+      <controlfield tag="001">991171842027005501</controlfield>
+      <datafield tag="040" ind1=" " ind2=" ">
+        <subfield code="a">CH-ZuSLS ZBS</subfield>
+        <subfield code="b">ger</subfield>
+      </datafield>
+      <datafield tag="100" ind1="1" ind2=" ">
+        <subfield code="a">Peier, Meinrad</subfield>
+        <subfield code="d">1903-1964</subfield>
+        <subfield code="0">(DE-588)1089118260</subfield>
+        <subfield code="4">art</subfield>
+      </datafield>
+      <datafield tag="245" ind1="1" ind2="0">
+        <subfield code="a">Schloss-Wartenfels</subfield>
+        <subfield code="c">M. Peier</subfield>
+      </datafield>
+      <datafield tag="264" ind1=" " ind2="1">
+        <subfield code="c">[um 1930?]</subfield>
+      </datafield>
+      <datafield tag="300" ind1=" " ind2=" ">
+        <subfield code="a">1 Druckgrafik</subfield>
+        <subfield code="b">Linolschnitt</subfield>
+        <subfield code="c">125 x 90 mm</subfield>
+      </datafield>
+      <datafield tag="336" ind1=" " ind2=" ">
+        <subfield code="b">sti</subfield>
+        <subfield code="2">rdacontent</subfield>
+      </datafield>
+      <datafield tag="337" ind1=" " ind2=" ">
+        <subfield code="b">n</subfield>
+        <subfield code="2">rdamedia</subfield>
+      </datafield>
+      <datafield tag="338" ind1=" " ind2=" ">
+        <subfield code="b">nb</subfield>
+        <subfield code="2">rdacarrier</subfield>
+      </datafield>
+      <datafield tag="340" ind1=" " ind2=" ">
+        <subfield code="b">169 x 139 mm</subfield>
+      </datafield>
+      <datafield tag="520" ind1=" " ind2=" ">
+        <subfield code="a">Blick von ENE auf Schloss Wartenfels.</subfield>
+      </datafield>
+      <datafield tag="690" ind1=" " ind2=" ">
+        <subfield code="a">Ansicht</subfield>
+        <subfield code="2">zbs-FS</subfield>
+      </datafield>
+      <datafield tag="690" ind1=" " ind2=" ">
+        <subfield code="a">Architekturbild</subfield>
+        <subfield code="2">zbs-FS</subfield>
+      </datafield>
+      <datafield tag="856" ind1="4" ind2="1">
+        <subfield code="u">https://intranet.zbsolothurn.ch/sfdownload/s3?path=artworks%2Fa0186.jpg</subfield>
+        <subfield code="z">Digitalisat der Zentralbibliothek Solothurn</subfield>
+      </datafield>
+      <datafield tag="900" ind1=" " ind2=" ">
+        <subfield code="a">HANunikat</subfield>
+      </datafield>
+      <datafield tag="988" ind1=" " ind2=" ">
+        <subfield code="c">System</subfield>
+        <subfield code="f">OTHER</subfield>
+        <subfield code="i">marc21</subfield>
+        <subfield code="l">57</subfield>
+        <subfield code="k">01</subfield>
+        <subfield code="e">false</subfield>
+        <subfield code="d">2024-03-12 00:22:49 Europe/Zurich</subfield>
+        <subfield code="g">991171842027005501</subfield>
+        <subfield code="j">20</subfield>
+        <subfield code="a">System</subfield>
+        <subfield code="b">2024-01-29 16:11:28 Europe/Zurich</subfield>
+      </datafield>
+    </record>
+  </metadata>
+</record>

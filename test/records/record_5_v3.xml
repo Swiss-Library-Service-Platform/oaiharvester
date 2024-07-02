@@ -1,0 +1,8 @@
+<record xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <header status="deleted">
+    <identifier>oai:alma.41SLSP_NETWORK:991171841354805501</identifier>
+    <datestamp>2000-06-08T12:42:18Z</datestamp>
+    <setSpec>oai_rnv</setSpec>
+    <setSpec>slsp_mongodb</setSpec>
+  </header>
+</record>
