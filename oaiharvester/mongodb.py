@@ -452,7 +452,7 @@ class Task:
 
         except Exception as e:
             logging.critical(f'Error inserting statistics record: {e}')
-            self.mongo.error_messages.append(f'Error inserting statistics record: {e}')
+            self.mongo.error_messages.append(f'Error inserting task record: {e}')
             self.mongo.error = True
             return None
 

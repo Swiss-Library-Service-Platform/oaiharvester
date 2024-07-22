@@ -184,6 +184,7 @@ def main():
     Main function to harvest data from Alma and update MongoDB
     """
     tools.configure_logger(job_name='task_workflow', set_name=set_name)
+    logging.info(f'Starting workflow: harvesting data from {set_name} and updating MongoDB')
     # Create new task, will generate error if task already exists with status 'in_process'
     task = mongo.get_in_process_task(new_task=True)
 
@@ -198,6 +199,7 @@ def main():
 
     tools.configure_logger(job_name='task_workflow', set_name=set_name)
     task.close()
+    logging.info(f'Ended workflow: harvesting data from {set_name} and updating MongoDB')
 
 
 if __name__ == '__main__':
