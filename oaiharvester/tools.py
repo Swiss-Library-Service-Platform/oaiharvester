@@ -156,8 +156,5 @@ def get_date_param() -> Optional[str]:
         date in format YYYY-MM-DD
     """
     if len(sys.argv) == 3 and sys.argv[1] == '--date':
-        directory = os.path.normpath(sys.argv[2])
-        if not os.path.isdir(directory):
-            logging.critical(f'Directory {directory} does not exist')
-            sys.exit(1)
-        return directory
+        from_date = os.path.normpath(sys.argv[2])
+        return from_date
