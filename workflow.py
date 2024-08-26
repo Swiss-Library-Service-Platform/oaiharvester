@@ -62,6 +62,7 @@ def harvest_data_from_alma(from_time: str, to_time: str) -> None:
                 break
             task.data['critical_error'] = True
             task.data['critical_error_messages'] += oai_set.error_messages
+            task.update()
             task.close()
             break
 

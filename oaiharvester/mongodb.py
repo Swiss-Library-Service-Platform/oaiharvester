@@ -501,7 +501,6 @@ class Task:
         """
         self._data = value
 
-    @check_error
     def update(self) -> Optional['Task']:
         """
         Update the current task
