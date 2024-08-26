@@ -194,6 +194,11 @@ def main():
         harvest_data_from_alma(from_time=mongo.get_harvesting_from_time().isoformat(),
                                to_time=date.today().isoformat())
 
+    elif tools.get_date_param() is not None and task.error is False and mongo.error is False:
+        harvest_data_from_alma(from_time=tools.get_date_param(),
+                               to_time=date.today().isoformat())
+
+
     # Update MongoDB
     if task.error is False:
         update_db()

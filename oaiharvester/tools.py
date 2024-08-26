@@ -142,3 +142,22 @@ def get_directory_param() -> Optional[str]:
             logging.critical(f'Directory {directory} does not exist')
             sys.exit(1)
         return directory
+
+
+def get_date_param() -> Optional[str]:
+    """
+    Get the date parameter from the command line
+
+    The date parameter will be used in "from" field of OAI pmh request
+
+    Returns
+    -------
+    str
+        date in format YYYY-MM-DD
+    """
+    if len(sys.argv) == 3 and sys.argv[1] == '--date':
+        directory = os.path.normpath(sys.argv[2])
+        if not os.path.isdir(directory):
+            logging.critical(f'Directory {directory} does not exist')
+            sys.exit(1)
+        return directory
