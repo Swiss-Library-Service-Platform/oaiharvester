@@ -22,6 +22,15 @@ python3 workflow.py
 It will harvest the data from Alma and store
 it into the Mongo database.
 
+To define the from_date, it is possible to use
+the `date` option:
+
+```bash
+python3 workflow.py --date 2024-07-01
+```
+
+Otherwise, it will use the date of the last processing day.
+
 It is also possible to skip the harvesting
 and to load already harvested data:
 
