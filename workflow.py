@@ -190,7 +190,8 @@ def main():
     task = mongo.get_in_process_task(new_task=True)
 
     # No harvesting if directory is provided
-    if tools.get_directory_param() is None and task.error is False and mongo.error is False:
+    if (tools.get_directory_param() is None and tools.get_date_param() is None
+            and task.error is False and mongo.error is False):
         harvest_data_from_alma(from_time=mongo.get_harvesting_from_time().isoformat(),
                                to_time=date.today().isoformat())
 
