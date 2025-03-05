@@ -18,10 +18,12 @@ config = configparser.ConfigParser()
 config.read('config.cfg')
 base_url = config['OAI_harvesting']['BASE_URL']
 set_name = config['OAI_harvesting']['SET_NAME']
+nb_chunks_to_keep = int(config['OAI_harvesting']['NB_CHUNK_DIRECTORIES_TO_KEEP'])
 db_name = config['MongoDB']['DB_NAME']
 active_col = config['MongoDB']['ACTIVE_COL']
 hist_col = config['MongoDB']['HIST_COL']
 task_col = config['MongoDB']['TASK_COL']
+
 
 ##################
 # Define objects #
@@ -186,6 +188,10 @@ def main():
     """
     tools.configure_logger(job_name='task_workflow', set_name=set_name)
     logging.info(f'Starting workflow: harvesting data from {set_name} and updating MongoDB')
+
+    # Clean old chunk directories
+    tools.clean_old_chunk_directories(keep=nb_chunks_to_keep)
+
     # Create new task, will generate error if task already exists with status 'in_process'
     task = mongo.get_in_process_task(new_task=True)
 

@@ -158,3 +158,25 @@ def get_date_param() -> Optional[str]:
     if len(sys.argv) == 3 and sys.argv[1] == '--date':
         from_date = os.path.normpath(sys.argv[2])
         return from_date
+
+
+def clean_old_chunk_directories(keep: int) -> None:
+    """
+    Clean old chunk directories
+
+    It will delete directories and only keep the number of directories
+    specified in the keep parameter
+
+    Parameters
+    ----------
+    keep : int
+        Number of directories to keep
+    """
+    directories = os.listdir('harvested_data')
+    directories = [directory for directory in directories
+                   if re.match(r'^OaiSet_\w+_\d{8}$', directory)]
+    directories.sort(reverse=True)
+    if len(directories) > keep:
+        for directory in directories[keep:]:
+            shutil.rmtree(f'harvested_data/{directory}')
+            logging.info(f'Deleted directory {directory}')
