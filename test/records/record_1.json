@@ -1,0 +1,256 @@
+{
+  "mms_id": "991171841676305501",
+  "marc": {
+    "100": [
+      {
+        "ind1": "1",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "Marteau,"
+          },
+          {
+            "n4": "art"
+          }
+        ]
+      }
+    ],
+    "245": [
+      {
+        "ind1": "1",
+        "ind2": "0",
+        "sub": [
+          {
+            "a": "Kosciusko, General En Chef Des Polonais"
+          },
+          {
+            "c": "Marteau pinx Warsaviae; Gravé par Schleich"
+          }
+        ]
+      }
+    ],
+    "264": [
+      {
+        "ind1": " ",
+        "ind2": "1",
+        "sub": [
+          {
+            "a": "Augsburg"
+          },
+          {
+            "c": "[zwischen 1810 und 1820]"
+          }
+        ]
+      }
+    ],
+    "300": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "1 Druckgrafik"
+          },
+          {
+            "c": "147 x 108 mm"
+          }
+        ]
+      }
+    ],
+    "336": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "b": "sti"
+          },
+          {
+            "n2": "rdacontent"
+          }
+        ]
+      }
+    ],
+    "337": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "b": "n"
+          },
+          {
+            "n2": "rdamedia"
+          }
+        ]
+      }
+    ],
+    "338": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "b": "nb"
+          },
+          {
+            "n2": "rdacarrier"
+          }
+        ]
+      }
+    ],
+    "340": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "b": "293 x 200 mm"
+          }
+        ]
+      }
+    ],
+    "500": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "Aquatinta mit Punktiertechnik. Die Abbildung ist ein hochovales Medaillon. Auf Blattrückseite mit Bleistift: Kupferstich, zeitgen., 115.-- DM, 2693 [in Kreis], 1816, 3.50; v. Diep. I B 971 / Thadäus K. / Poln Politiker u Feldherr. / Beteiligte sich 1776 am / amerikanischen Freiheitskrieg / Adjudant v. Washington / 1783 Géneral, kehrte 1784 / nach Polen zurück, 1794 Oberfeldherr / im Freiheitskampf der Polen / 1746-1817 Solothurn / um 1810-20."
+          }
+        ]
+      }
+    ],
+    "520": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "Profilporträt nach links, Haare mit zwei Reihen Locken, über der Brust eine Schärpe."
+          }
+        ]
+      }
+    ],
+    "541": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "d": "1997"
+          }
+        ]
+      }
+    ],
+    "690": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "Historische Landschaft"
+          },
+          {
+            "n2": "zbs-FS"
+          }
+        ]
+      }
+    ],
+    "700": [
+      {
+        "ind1": "1",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "Schleich"
+          },
+          {
+            "n4": "egr"
+          }
+        ]
+      },
+      {
+        "ind1": "1",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "Engelbrecht, Martin"
+          },
+          {
+            "n4": "pbl"
+          }
+        ]
+      }
+    ],
+    "856": [
+      {
+        "ind1": "4",
+        "ind2": "1",
+        "sub": [
+          {
+            "u": "https://intranet.zbsolothurn.ch/sfdownload/s3?path=artworks%2Fa1061.jpg"
+          },
+          {
+            "z": "Digitalisat der Zentralbibliothek Solothurn"
+          }
+        ]
+      }
+    ],
+    "900": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "HANunikat"
+          }
+        ]
+      }
+    ],
+    "leader": "01539nkm#a22002772c#4500",
+    "008": "240129q18101820xx ||||######|#0|#k|####d",
+    "005": "20240129163007.0",
+    "001": "991171841676305501",
+    "019": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "Exemplarspezifische Aufnahme, gesperrt für Veränderungen und das Anhängen von Signaturen"
+          },
+          {
+            "n5": "ZBS/A150/20231004"
+          }
+        ]
+      }
+    ],
+    "040": [
+      {
+        "ind1": " ",
+        "ind2": " ",
+        "sub": [
+          {
+            "a": "CH-ZuSLS ZBS"
+          },
+          {
+            "b": "ger"
+          }
+        ]
+      }
+    ]
+  },
+  "p_date": {
+    "$date": "2024-04-02T12:42:18.000Z"
+  },
+  "sup": false,
+  "c_date": {
+    "$date": "2024-01-29T16:07:43.000Z"
+  },
+  "u_date": {
+    "$date": "2024-01-29T16:30:07.000Z"
+  },
+  "format": "Image",
+  "access": "P"
+}

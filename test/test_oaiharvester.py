@@ -9,6 +9,9 @@ from lxml import etree
 import configparser
 from datetime import datetime, timedelta
 import dotenv
+import json
+
+from records import JsonRecord, ArchiveJsonRecord
 
 os.chdir(os.path.dirname(__file__))
 
@@ -540,6 +543,33 @@ class test_mongodb(unittest.TestCase):
         t = mongo.get_in_process_task()
         self.assertTrue(t.error, 'Task should have an error')
         self.assertEqual(t.data, dict(), 'Data should be empty')
+
+    def test_format_and_access(self):
+        with open('records/record_1.json', 'rb') as f:
+            data = json.load(f)
+        rec = JsonRecord(data)
+        self.assertEqual(rec.format, 'Image')
+
+        data['marc']['leader'] = data['marc']['leader'][:6] + 'am' + data['marc']['leader'][8:]
+        rec = JsonRecord(data)
+        self.assertEqual(rec.format, 'Book')
+        self.assertEqual(rec.access, 'P')
+
+        data['marc']['008'] = data['marc']['008'][:23] + 'o' + data['marc']['008'][:24]
+        rec = JsonRecord(data)
+        self.assertEqual(rec.format, 'Book')
+        self.assertEqual(rec.access, 'O')
+
+    def test_filter_versions(self):
+        with open('records/record_2.json', 'rb') as f:
+            data = json.load(f)
+
+        for v in data['versions']:
+            v['p_date'] = datetime.fromisoformat(v['p_date']['$date'].replace("Z", "+00:00"))
+
+        rec = ArchiveJsonRecord(data)
+        rec.filter_versions()
+        self.assertEqual(len(rec.data['versions']), 4)
 
     @classmethod
     def tearDownClass(cls):
