@@ -704,10 +704,15 @@ class ArchiveJsonRecord(JsonRecord):
         self.data['versions'].append(data)
         self.sort_versions()
         self.filter_versions()
-        self.data['u_date'] = self.data['versions'][-1]['u_date']
-        self.data['c_date'] = self.data['versions'][-1]['c_date']
-        self.data['p_date'] = self.data['versions'][-1]['p_date']
-        self.data['sup'] = self.data['versions'][-1]['sup']
+        try:
+            self.data['u_date'] = self.data['versions'][-1]['u_date']
+            self.data['c_date'] = self.data['versions'][-1]['c_date']
+            self.data['p_date'] = self.data['versions'][-1]['p_date']
+            self.data['sup'] = self.data['versions'][-1]['sup']
+        except KeyError:
+            self.data['data_error'] = True
+            self.data['data_error_messages'] = f'{repr(record)}: corrupted record added to archive'
+
         if self.data['versions'][-1].get('data_error', False) is True:
             self.data['data_error'] = True
             self.data['data_error_messages'] = self.data['versions'][-1]['data_error_messages']

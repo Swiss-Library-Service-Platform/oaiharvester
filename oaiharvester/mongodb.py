@@ -211,6 +211,8 @@ class Mongo:
         if history_record is not None:
             if hasattr(record, 'deleted') and record.deleted is True:
                 history_record.deleted = True
+            else:
+                history_record.deleted = False
 
             logging.info(f'{repr(record)}:Record {record.mms_id} already exists in the {self.hist_col} collection')
             history_record.add_record_to_archive(record)
@@ -542,6 +544,7 @@ class Task:
         """
         Close the current task
         """
+        logging.info(f'Closing task and close task in report collection')
         # Update stats
         active_mms_ids = self.mongo.get_all_mms_ids(self.mongo.active_col)
 
