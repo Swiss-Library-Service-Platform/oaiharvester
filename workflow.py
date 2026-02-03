@@ -1,14 +1,18 @@
 import os
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
+load_dotenv()
+
 from oaiharvester.harvester import OaiSet, Chunk
 from oaiharvester.mongodb import Mongo
 import oaiharvester.tools as tools
 import configparser
 import logging
 from datetime import date
-
-abspath = os.path.abspath(__file__)
-dname = os.path.dirname(abspath)
-os.chdir(dname)
 
 
 ###############
