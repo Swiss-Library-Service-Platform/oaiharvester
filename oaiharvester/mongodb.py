@@ -376,7 +376,7 @@ class Mongo:
         date
         """
         try:
-            tasks = self.db[self.task_col].find({'$and': [{'critical_error': False},
+            tasks = self.task_db[self.task_col].find({'$and': [{'critical_error': False},
                                                           {'end_time': {'$ne': None}},
                                                           {'in_process': False}]},
                                                 sort=[('start_time', -1)])
