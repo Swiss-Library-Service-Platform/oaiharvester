@@ -11,7 +11,8 @@ from datetime import datetime, timedelta
 import dotenv
 import json
 
-from records import JsonRecord, ArchiveJsonRecord
+from oaiharvester.records import JsonRecord, ArchiveJsonRecord
+from workflow import task_db
 
 os.chdir(os.path.dirname(__file__))
 
@@ -25,6 +26,7 @@ base_url = config['OAI_harvesting']['BASE_URL']
 db_name = config['MongoDB']['DB_NAME']
 active_col = config['MongoDB']['ACTIVE_COL']
 hist_col = config['MongoDB']['HIST_COL']
+task_db = config['MongoDB']['TASK_DB']
 task_col = config['MongoDB']['TASK_COL']
 
 
@@ -40,6 +42,7 @@ class TestOaiHarvester(unittest.TestCase):
         oai_set.get_next_chunk_path()
         self.assertTrue(os.path.exists(oai_set.get_harvest_directory()))
         chunk = None
+        i = 0
         for i, chunk in enumerate(oai_set.get_next_chunk()):
             if chunk is not None:
                 chunk.save()
@@ -221,7 +224,7 @@ class TestRecords(unittest.TestCase):
                          'MMS ID should be 991171056281605501')
 
 
-class test_tools(unittest.TestCase):
+class TestTools(unittest.TestCase):
 
     def test_check_free_space(self):
         self.assertFalse(tools.check_free_space('harvested_data', low_limit=10000, error_limit=10000), 'There should not be enough free space')
@@ -243,11 +246,11 @@ class test_tools(unittest.TestCase):
         self.assertTrue(all([os.path.exists(chunk) for chunk in chunks]), 'All chunks should exist')
 
 
-class test_mongodb(unittest.TestCase):
+class TestMongodb(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
         mongo.db[mongo.active_col].drop()
         mongo.db[mongo.hist_col].drop()
         mongo.db[mongo.task_col].drop()
@@ -257,7 +260,7 @@ class test_mongodb(unittest.TestCase):
         mongo.client.close()
 
     def test_mongo(self):
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
         self.assertFalse(mongo.error, 'There should not be an error')
 
         mongo.test = mongo.db['test1']
@@ -270,7 +273,7 @@ class test_mongodb(unittest.TestCase):
         mongo.client.close()
 
     def test_mongo_get_record(self):
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
         with open('records/record_1.xml', 'r') as f:
             xml_data = f.read()
         record = harvester.XmlRecord(xml_data=xml_data).to_json()
@@ -286,7 +289,7 @@ class test_mongodb(unittest.TestCase):
         oai_set = harvester.OaiSet(set_name='slsp_mongodb', base_url=base_url)
         chunk = iter(oai_set.get_next_chunk()).__next__()
 
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
 
         json_record = None
 
@@ -311,7 +314,7 @@ class test_mongodb(unittest.TestCase):
         _ = chunk_iter.__next__()
         chunk = chunk_iter.__next__()
 
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
 
         bulk_records = set()
         for xml_record in chunk.get_records():
@@ -340,7 +343,7 @@ class test_mongodb(unittest.TestCase):
             xml_data2 = f.read()
         record2 = harvester.XmlRecord(xml_data=xml_data2).to_json()
 
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
 
         mongo.archive_record(record1)
         mongo.archive_record(record2)
@@ -362,7 +365,7 @@ class test_mongodb(unittest.TestCase):
             xml_data2 = f.read()
         record2 = harvester.XmlRecord(xml_data=xml_data2).to_json()
 
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
 
         mongo.insert_record(record1, mongo.active_col)
         if record1.p_date > record2.p_date:
@@ -393,7 +396,7 @@ class test_mongodb(unittest.TestCase):
             xml_data2 = f.read()
         record2 = harvester.XmlRecord(xml_data=xml_data2).to_json()
 
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
 
         mongo.insert_record(record1, mongo.active_col)
 
@@ -445,7 +448,7 @@ class test_mongodb(unittest.TestCase):
         chunk = harvester.Chunk(oai_set=harvester.OaiSet(set_name='slsp_mongodb', base_url=base_url),
                                 file_path='harvested_data/test/chunk_slsp_mongodb_00002.xml')
 
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
 
         for record in chunk.get_records():
             if record.error:
@@ -473,7 +476,7 @@ class test_mongodb(unittest.TestCase):
         mongo.client.close()
 
     def test_create_new_task_1(self):
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
         mongo.db[mongo.task_col].drop()
         mongo.get_in_process_task(new_task=True)
         self.assertEqual(mongo.db[task_col].count_documents({}), 1, 'Number of documents should be 1')
@@ -501,7 +504,7 @@ class test_mongodb(unittest.TestCase):
         mongo.client.close()
 
     def test_create_new_stat_2(self):
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
         mongo.db[mongo.task_col].drop()
         mongo.get_in_process_task(new_task=True)
         task = mongo.get_in_process_task()
@@ -532,7 +535,7 @@ class test_mongodb(unittest.TestCase):
         mongo.client.close()
 
     def test_close_task(self):
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
         mongo.db[mongo.task_col].drop()
         task = mongo.get_in_process_task(new_task=True)
         time.sleep(3)
@@ -573,13 +576,31 @@ class test_mongodb(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
         mongo.db[mongo.active_col].drop()
         mongo.db[mongo.hist_col].drop()
         mongo.db[mongo.task_col].drop()
         mongo.db['test1'].drop()
         mongo.db['test2'].drop()
         mongo.db['test3'].drop()
+        mongo.client.close()
+
+
+class TestTask(unittest.TestCase):
+    def test_task(self):
+        mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
+        mongo.db[mongo.task_col].drop()
+        _ = mongo.get_in_process_task(new_task=True)
+        task = mongo.get_in_process_task()
+
+        self.assertIsNotNone(task, 'Task should not be None')
+        self.assertTrue(hasattr(task, 'update'), 'Task should have an update method')
+        self.assertTrue(hasattr(task, 'close'), 'Task should have a close method')
+        self.assertTrue(task.data['in_process'])
+
+        t = mongo.get_in_process_task()
+        self.assertTrue(t.data['in_process'])
+        task.close()
         mongo.client.close()
 
 

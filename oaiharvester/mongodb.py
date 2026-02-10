@@ -55,7 +55,7 @@ class Mongo:
 
     """
 
-    def __init__(self, db_name: str, active_col: str, hist_col: str, task_col: str):
+    def __init__(self, db_name: str, active_col: str, hist_col: str, task_db:str, task_col: str):
         """
         Initialize the MongoDB client
 
@@ -65,6 +65,8 @@ class Mongo:
             Collection name
         hist_col : str
             Collection name for the previous records versions
+        task_db : str
+            Database name for the statistics related to the tasks
         task_col : str
             Collection name for the statistics related to the tasks
         """
@@ -85,6 +87,7 @@ class Mongo:
             self.error = True
             return
         self.db = self.client[db_name]
+        self.task_db = self.client[task_db]
         self.active_col = active_col
         self.hist_col = hist_col
         self.task_col = task_col
@@ -449,7 +452,7 @@ class Task:
                      'critical_error_messages': [],
                      'data_error_messages': []}
         try:
-            self.mongo.db[self.mongo.task_col].insert_one(task_data)
+            self.mongo.task_db[self.mongo.task_col].insert_one(task_data)
             return None
 
         except Exception as e:
@@ -467,7 +470,7 @@ class Task:
         dict
         """
         try:
-            return self.mongo.db[self.mongo.task_col].find_one({'in_process': True})
+            return self.mongo.task_db[self.mongo.task_col].find_one({'in_process': True})
 
         except Exception as e:
             logging.critical(f'Error getting last task in process: {e}')
@@ -513,7 +516,7 @@ class Task:
 
         """
         try:
-            self.mongo.db[self.mongo.task_col].update_one({'_id': self.data['_id']}, {'$set': self.data})
+            self.mongo.task_db[self.mongo.task_col].update_one({'_id': self.data['_id']}, {'$set': self.data})
             logging.info(f'Task record updated in {self.mongo.task_col} collection')
             return self
         except Exception as e:
@@ -533,7 +536,7 @@ class Task:
             Error message
         """
         try:
-            self.mongo.db[self.mongo.task_col].update_one({'_id': self.data['_id']},
+            self.mongo.task_db[self.mongo.task_col].update_one({'_id': self.data['_id']},
                                                           {'$push': {'data_error_messages': message}})
         except Exception as e:
             logging.critical(f'Error adding data error message: {e}')

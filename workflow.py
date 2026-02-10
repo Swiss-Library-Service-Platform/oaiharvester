@@ -26,6 +26,7 @@ nb_chunks_to_keep = int(config['OAI_harvesting']['NB_CHUNK_DIRECTORIES_TO_KEEP']
 db_name = config['MongoDB']['DB_NAME']
 active_col = config['MongoDB']['ACTIVE_COL']
 hist_col = config['MongoDB']['HIST_COL']
+task_db = config['MongoDB']['TASK_DB']
 task_col = config['MongoDB']['TASK_COL']
 
 
@@ -35,7 +36,7 @@ task_col = config['MongoDB']['TASK_COL']
 
 oai_set = OaiSet(set_name=set_name, base_url=base_url)
 
-mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_col=task_col)
+mongo = Mongo(db_name=db_name, active_col=active_col, hist_col=hist_col, task_db=task_db, task_col=task_col)
 
 
 #########################
