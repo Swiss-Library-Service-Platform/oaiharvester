@@ -146,14 +146,14 @@ def update_db() -> None:
         # Iterate over records in the chunk
         for record in chunk.get_records():
 
+            # Transform record to json to insert it in MongoDB
+            json_record = record.to_json()
+
             # Check data error of each xml record
             if record.error is True:
                 for error_message in record.error_messages:
                     mongo.get_in_process_task().add_data_error_message(error_message)
                 continue
-
-            # Transform record to json to insert it in MongoDB
-            json_record = record.to_json()
 
             # Check data error of each json record, json record with error are ignored => blocking error
             if json_record.error is not True:

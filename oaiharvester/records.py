@@ -251,7 +251,7 @@ class XmlRecord(Record):
         JsonRecord
             JSON record
         """
-        if self.data is None or self.mms_id is None:
+        if self.data is None or self.mms_id is None or self.error is True:
             return None
 
         json_record = {'mms_id': self.mms_id,
