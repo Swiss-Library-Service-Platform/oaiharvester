@@ -746,6 +746,9 @@ class ArchiveJsonRecord(JsonRecord):
         Filter versions by date. We keep the first, the last and the 3 versions.
         Additionally, we keep the first version of each year.
         """
+        # Deactivate filter
+        return
+
         # We keep at least 4 versions
         if len(self.data['versions']) <= 4:
             return
